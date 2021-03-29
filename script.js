@@ -33,3 +33,8 @@ function rate()
     var ratevalue = document.getElementById("rate");
     document.getElementById("rateshow").innerHTML = ratevalue.value + "%";
 }
+
+if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("service-worker.js");
+  }
+  
